@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -3px 5px 3px grey;
+}
+
+nav img {
+  height: 50px;
+  width: 190px;
+}
+
+/* reservation module section */
+
+.reservation-module {
+  background-color: #f6f6f6;
+}
+
+.reservation-module .nav-reservation-module {
+  height: 70px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-module .nav-reservation-module i {
+  margin-right: 10px;
+}
+
+.reservation-module .content-reservation-module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.reservation-module .content-reservation-module h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.reservation-module .button-reservation-module {
+  margin-top: 25px;
+  height: 60px;
+  width: 260px;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 400ms, background 1000ms;
+}
+
+.button-reservation-module:hover {
+  transform: scale(1.15);
+  background: linear-gradient(to top, #ff79da, #9356dc);
+}
+
+.reservation-module .button-reservation-module a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 17px 11px;
+}
+
+/* functioning section */
+
+.functioning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.functioning-title {
+  width: 100%;
+  margin: 35px 0 20px 0;
+}
+
+.functioning-quote {
+  height: 80px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  box-shadow: 2px 5px 5px grey;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.functioning-quote .quote-nbr {
+  height: 30px;
+  width: 30px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: -12px;
+}
