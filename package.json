@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "0.1.0",
+  "description": "Appli gastronomie francaise",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riton963/Ohmyfood.git"
+  },
+  "author": "Dalmasso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riton963/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Riton963/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.43.5"
+  }
+}

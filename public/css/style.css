@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 h1,
 h2,
 h3,
@@ -11,7 +10,7 @@ p,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
 }
 
@@ -24,27 +23,22 @@ body {
   margin: 0 auto;
 }
 
-/* header */
-
 nav {
-  height: 80px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 -3px 5px 3px grey;
 }
-
 nav img {
-  height: 50px;
+  height: 35px;
   width: 190px;
 }
 
 /* reservation module section */
-
 .reservation-module {
   background-color: #f6f6f6;
 }
-
 .reservation-module .nav-reservation-module {
   height: 70px;
   background-color: #eaeaea;
@@ -52,11 +46,9 @@ nav img {
   justify-content: center;
   align-items: center;
 }
-
 .reservation-module .nav-reservation-module i {
   margin-right: 10px;
 }
-
 .reservation-module .content-reservation-module {
   display: flex;
   flex-direction: column;
@@ -65,12 +57,10 @@ nav img {
   text-align: center;
   padding: 70px 0;
 }
-
 .reservation-module .content-reservation-module h1 {
   font-size: 2rem;
   margin-bottom: 25px;
 }
-
 .reservation-module .button-reservation-module {
   margin-top: 25px;
   height: 60px;
@@ -83,12 +73,9 @@ nav img {
   transform: scale(1);
   transition: transform 400ms, background 1000ms;
 }
-
-.button-reservation-module:hover {
+.reservation-module .button-reservation-module:hover {
   transform: scale(1.15);
-  background: linear-gradient(to top, #ff79da, #9356dc);
 }
-
 .reservation-module .button-reservation-module a {
   text-decoration: none;
   color: white;
@@ -97,20 +84,18 @@ nav img {
 }
 
 /* functioning section */
-
 .functioning {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
-
-.functioning-title {
+.functioning .functioning-title {
   width: 100%;
   margin: 35px 0 20px 0;
 }
-
-.functioning-quote {
+.functioning .functioning-quote {
   height: 80px;
   width: 100%;
   background-color: #f6f6f6;
@@ -120,9 +105,18 @@ nav img {
   display: flex;
   align-items: center;
   position: relative;
+  transition: 0.8s;
 }
-
-.functioning-quote .quote-nbr {
+.functioning .functioning-quote:hover {
+  background-color: #f5edff;
+}
+.functioning .functioning-quote:hover .quote-nbr {
+  background-color: #9356dc;
+}
+.functioning .functioning-quote:hover i {
+  color: #9356dc;
+}
+.functioning .functioning-quote .quote-nbr {
   height: 30px;
   width: 30px;
   background-color: #9356dc;
@@ -135,3 +129,57 @@ nav img {
   position: absolute;
   left: -12px;
 }
+.functioning .functioning-quote i {
+  color: grey;
+  padding: 0 25px 0 35px;
+}
+.functioning .functioning-quote p {
+  font-weight: 500;
+}
+
+/* restaurant section */
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+.restaurant .restaurant-card {
+  margin-top: 35px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: white;
+}
+.restaurant a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant img {
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+.restaurant .restaurant-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.restaurant .restaurant-card-content svg {
+  width: 24px;
+  height: 22px;
+}
+.restaurant .restaurant-card-content svg path {
+  fill-opacity: 0;
+  stroke: black;
+  stroke-width: 42;
+}
+.restaurant .restaurant-card-content svg path:hover {
+  fill-opacity: 1;
+  fill: red;
+}
+
+footer {
+  background-color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */
