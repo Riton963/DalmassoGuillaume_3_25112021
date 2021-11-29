@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 h1,
 h2,
 h3,
@@ -173,6 +172,40 @@ nav img {
 .restaurant .restaurant-card-content svg path:hover {
   fill-opacity: 1;
   fill: red;
+}
+
+footer {
+  background-color: #333;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+footer .container .footer-logo {
+  padding: 0 0 30px 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 22px;
+  color: white;
+}
+footer .container .footer-icon {
+  display: flex;
+  color: white;
+  padding-bottom: 5px;
+}
+footer .container .footer-icon i {
+  height: 20px;
+  width: 20px;
+  margin: 0 5px 0 0;
+}
+footer .container .footer-icon a {
+  text-decoration: none;
+  color: white;
+}
+footer .container a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
