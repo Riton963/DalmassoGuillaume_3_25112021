@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 * {
@@ -58,17 +59,17 @@ nav img {
 .reservation-module {
   background-color: #f6f6f6;
 }
-.reservation-module .nav-reservation-module {
+.reservation-module .reservation-module__nav {
   height: 60px;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.reservation-module .nav-reservation-module i {
+.reservation-module .reservation-module__nav i {
   margin-right: 10px;
 }
-.reservation-module .content-reservation-module {
+.reservation-module .reservation-module__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +77,7 @@ nav img {
   text-align: center;
   padding: 70px 0;
 }
-.reservation-module .content-reservation-module h1 {
+.reservation-module .reservation-module__content h1 {
   font-size: 2rem;
   margin-bottom: 25px;
 }
@@ -88,11 +89,11 @@ nav img {
   flex-direction: column;
   padding-bottom: 50px;
 }
-.functioning .functioning-title {
+.functioning .functioning__title {
   width: 100%;
   margin: 35px 0 20px 0;
 }
-.functioning .functioning-quote {
+.functioning .functioning__quote {
   height: 80px;
   width: 100%;
   background-color: #f6f6f6;
@@ -104,16 +105,16 @@ nav img {
   position: relative;
   transition: 0.8s;
 }
-.functioning .functioning-quote:hover {
+.functioning .functioning__quote:hover {
   background-color: #f5edff;
 }
-.functioning .functioning-quote:hover .quote-nbr {
+.functioning .functioning__quote:hover .quote__nbr {
   background-color: #9356dc;
 }
-.functioning .functioning-quote:hover i {
+.functioning .functioning__quote:hover i {
   color: #9356dc;
 }
-.functioning .functioning-quote .quote-nbr {
+.functioning .functioning__quote .quote__nbr {
   height: 30px;
   width: 30px;
   background-color: #9356dc;
@@ -126,11 +127,11 @@ nav img {
   position: absolute;
   left: -12px;
 }
-.functioning .functioning-quote i {
+.functioning .functioning__quote i {
   color: grey;
   padding: 0 25px 0 35px;
 }
-.functioning .functioning-quote p {
+.functioning .functioning__quote p {
   font-weight: 500;
 }
 
@@ -138,7 +139,7 @@ nav img {
   background-color: #f6f6f6;
   padding: 50px 0;
 }
-.restaurant .restaurant-card {
+.restaurant .restaurant__card {
   margin-top: 35px;
   height: 300px;
   border-radius: 25px;
@@ -154,22 +155,22 @@ nav img {
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-.restaurant .restaurant-card-content {
+.restaurant .restaurant__card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
-.restaurant .restaurant-card-content svg {
+.restaurant .restaurant__card-content svg {
   width: 24px;
   height: 22px;
 }
-.restaurant .restaurant-card-content svg path {
+.restaurant .restaurant__card-content svg path {
   fill-opacity: 0;
   stroke: black;
   stroke-width: 42;
 }
-.restaurant .restaurant-card-content svg path:hover {
+.restaurant .restaurant__card-content svg path:hover {
   fill-opacity: 1;
   fill: red;
 }
@@ -182,23 +183,23 @@ footer .container {
   flex-direction: column;
   padding: 30px 0;
 }
-footer .container .footer-logo {
+footer .container .footer__logo {
   padding: 0 0 30px 0;
   font-family: "Shrikhand", cursive;
   font-size: 22px;
   color: white;
 }
-footer .container .footer-icon {
+footer .container .footer__icon {
   display: flex;
   color: white;
   padding-bottom: 5px;
 }
-footer .container .footer-icon i {
+footer .container .footer__icon i {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
 }
-footer .container .footer-icon a {
+footer .container .footer__icon a {
   text-decoration: none;
   color: white;
 }

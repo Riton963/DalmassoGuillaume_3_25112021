@@ -5,12 +5,12 @@
   flex-direction: column;
   padding-bottom: 50px;
 
-  .functioning-title {
+  .functioning__title {
     width: 100%;
     margin: 35px 0 20px 0;
   }
 
-  .functioning-quote {
+  .functioning__quote {
     height: 80px;
     width: 100%;
     background-color: $light-grey;
@@ -24,7 +24,7 @@
     &:hover {
       background-color: #f5edff;
 
-      .quote-nbr {
+      .quote__nbr {
         background-color: $primary-color;
       }
       i {
@@ -32,7 +32,7 @@
       }
     }
 
-    .quote-nbr {
+    .quote__nbr {
       height: 30px;
       width: 30px;
       background-color: $primary-color;

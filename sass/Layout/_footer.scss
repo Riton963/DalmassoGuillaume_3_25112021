@@ -4,13 +4,13 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
-    .footer-logo {
+    .footer__logo {
       padding: 0 0 30px 0;
       font-family: 'Shrikhand', cursive;
       font-size: 22px;
       color: white;
     }
-    .footer-icon {
+    .footer__icon {
       display: flex;
       color: white;
       padding-bottom: 5px;

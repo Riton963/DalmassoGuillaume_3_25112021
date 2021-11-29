@@ -2,7 +2,7 @@
   background-color: $light-grey;
   padding: 50px 0;
 
-  .restaurant-card {
+  .restaurant__card {
     margin-top: 35px;
     height: 300px;
     border-radius: 25px;
@@ -20,7 +20,7 @@
     border-radius: 25px 25px 0 0;
   }
 
-  .restaurant-card-content {
+  .restaurant__card-content {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,7 +1,7 @@
 .reservation-module {
   background-color: $light-grey;
 
-  .nav-reservation-module {
+  .reservation-module__nav {
     height: 60px;
     background-color: #eaeaea;
     display: flex;
@@ -11,7 +11,7 @@
       margin-right: 10px;
     }
   }
-  .content-reservation-module {
+  .reservation-module__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
