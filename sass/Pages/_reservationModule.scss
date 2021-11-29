@@ -1,0 +1,26 @@
+.reservation-module {
+  background-color: $light-grey;
+
+  .nav-reservation-module {
+    height: 60px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      margin-right: 10px;
+    }
+  }
+  .content-reservation-module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 0;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  }
+}

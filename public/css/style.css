@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
 }
 
 * {
@@ -21,6 +20,28 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.button-reservation-module {
+  margin-top: 25px;
+  height: 60px;
+  width: 260px;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 400ms, background 1000ms;
+}
+.button-reservation-module:hover {
+  transform: scale(1.15);
+}
+.button-reservation-module a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 17px 11px;
 }
 
 nav {
@@ -35,12 +56,11 @@ nav img {
   width: 190px;
 }
 
-/* reservation module section */
 .reservation-module {
   background-color: #f6f6f6;
 }
 .reservation-module .nav-reservation-module {
-  height: 70px;
+  height: 60px;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
@@ -61,29 +81,7 @@ nav img {
   font-size: 2rem;
   margin-bottom: 25px;
 }
-.reservation-module .button-reservation-module {
-  margin-top: 25px;
-  height: 60px;
-  width: 260px;
-  background: linear-gradient(to top, #9356dc, #ff79da);
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-  transition: transform 400ms, background 1000ms;
-}
-.reservation-module .button-reservation-module:hover {
-  transform: scale(1.15);
-}
-.reservation-module .button-reservation-module a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  padding: 17px 11px;
-}
 
-/* functioning section */
 .functioning {
   display: flex;
   justify-content: center;
@@ -137,7 +135,6 @@ nav img {
   font-weight: 500;
 }
 
-/* restaurant section */
 .restaurant {
   background-color: #f6f6f6;
   padding: 50px 0;
@@ -176,10 +173,6 @@ nav img {
 .restaurant .restaurant-card-content svg path:hover {
   fill-opacity: 1;
   fill: red;
-}
-
-footer {
-  background-color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */

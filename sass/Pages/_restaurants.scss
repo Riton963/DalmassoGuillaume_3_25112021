@@ -1,0 +1,42 @@
+.restaurant {
+  background-color: $light-grey;
+  padding: 50px 0;
+
+  .restaurant-card {
+    margin-top: 35px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .restaurant-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    svg {
+      width: 24px;
+      height: 22px;
+      path {
+        fill-opacity: 0;
+        stroke: black;
+        stroke-width: 42;
+        &:hover {
+          fill-opacity: 1;
+          fill: red;
+        }
+      }
+    }
+  }
+}
