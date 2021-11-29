@@ -1,9 +1,9 @@
 @import './Utils/variables';
+@import './Utils/mixins';
 @import './Base/typography';
 @import './Base/base';
-@import './Composants/button';
-@import './Pages/homeNav';
-@import './Pages/reservationModule';
+@import './Pages/homeHeader';
 @import './Pages/functioning';
 @import './Pages/restaurants';
+@import './Layout/nav';
 @import './Layout/footer';

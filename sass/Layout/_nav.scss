@@ -1,0 +1,20 @@
+.nav {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -3px 5px 3px grey;
+  .nav__logo {
+    font-size: 32px;
+    color: black;
+    @include logo-font;
+    font-size: 2.3rem;
+  }
+  a {
+    position: absolute;
+    left: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+  }
+}

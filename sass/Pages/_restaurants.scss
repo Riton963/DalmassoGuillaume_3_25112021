@@ -7,35 +7,38 @@
     height: 300px;
     border-radius: 25px;
     background-color: white;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  img {
-    object-fit: cover;
-    height: 70%;
-    width: 100%;
-    border-radius: 25px 25px 0 0;
-  }
-
-  .restaurant__card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    svg {
-      width: 24px;
-      height: 22px;
-      path {
-        fill-opacity: 0;
-        stroke: black;
-        stroke-width: 42;
-        &:hover {
-          fill-opacity: 1;
-          fill: red;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: black;
+      .restaurant__new {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: $tretiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100px;
+        border-radius: 3px;
+        p {
+          color: mix(black, $tretiary-color, 30%);
+          font-weight: bold;
         }
+      }
+      img {
+        object-fit: cover;
+        height: 70%;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .restaurant__card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
       }
     }
   }

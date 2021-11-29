@@ -22,7 +22,32 @@ body {
   margin: 0 auto;
 }
 
-.button-reservation-module {
+.home-header {
+  background-color: #f6f6f6;
+}
+.home-header .home-header__geoloc {
+  height: 60px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-header .home-header__geoloc i {
+  margin-right: 10px;
+}
+.home-header .home-header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 0;
+}
+.home-header .home-header__content h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.home-header .home-header__content .home-header__button {
   margin-top: 25px;
   height: 60px;
   width: 260px;
@@ -34,52 +59,14 @@ body {
   transform: scale(1);
   transition: transform 400ms, background 1000ms;
 }
-.button-reservation-module:hover {
+.home-header .home-header__content .home-header__button:hover {
   transform: scale(1.15);
 }
-.button-reservation-module a {
+.home-header .home-header__content .home-header__button a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   padding: 17px 11px;
-}
-
-nav {
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 -3px 5px 3px grey;
-}
-nav img {
-  height: 35px;
-  width: 190px;
-}
-
-.reservation-module {
-  background-color: #f6f6f6;
-}
-.reservation-module .reservation-module__nav {
-  height: 60px;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.reservation-module .reservation-module__nav i {
-  margin-right: 10px;
-}
-.reservation-module .reservation-module__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 70px 0;
-}
-.reservation-module .reservation-module__content h1 {
-  font-size: 2rem;
-  margin-bottom: 25px;
 }
 
 .functioning {
@@ -144,35 +131,60 @@ nav img {
   height: 300px;
   border-radius: 25px;
   background-color: white;
+  position: relative;
 }
-.restaurant a {
+.restaurant .restaurant__card a {
   text-decoration: none;
   color: black;
 }
-.restaurant img {
+.restaurant .restaurant__card a .restaurant__new {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  border-radius: 3px;
+}
+.restaurant .restaurant__card a .restaurant__new p {
+  color: #6b9e92;
+  font-weight: bold;
+}
+.restaurant .restaurant__card a img {
   object-fit: cover;
   height: 70%;
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-.restaurant .restaurant__card-content {
+.restaurant .restaurant__card a .restaurant__card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
-.restaurant .restaurant__card-content svg {
-  width: 24px;
-  height: 22px;
+
+.nav {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -3px 5px 3px grey;
 }
-.restaurant .restaurant__card-content svg path {
-  fill-opacity: 0;
-  stroke: black;
-  stroke-width: 42;
+.nav .nav__logo {
+  font-size: 32px;
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.3rem;
 }
-.restaurant .restaurant__card-content svg path:hover {
-  fill-opacity: 1;
-  fill: red;
+.nav a {
+  position: absolute;
+  left: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
 }
 
 footer {
