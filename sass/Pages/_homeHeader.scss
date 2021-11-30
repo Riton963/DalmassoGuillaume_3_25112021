@@ -31,10 +31,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: scale(1);
-      transition: transform 400ms, background 1000ms;
+      transition: transform 400ms ease-out;
       &:hover {
-        transform: scale(1.15);
+        transform: scale(1.2);
       }
       a {
         text-decoration: none;

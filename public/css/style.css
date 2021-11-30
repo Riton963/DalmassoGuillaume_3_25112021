@@ -56,11 +56,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1);
-  transition: transform 400ms, background 1000ms;
+  transition: transform 400ms ease-out;
 }
 .home-header .home-header__content .home-header__button:hover {
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 .home-header .home-header__content .home-header__button a {
   text-decoration: none;
@@ -185,6 +184,34 @@ body {
   font-size: 22px;
   text-decoration: none;
   color: black;
+}
+
+header .header-img {
+  position: relative;
+}
+header .header-img img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+header .header-img .header-img__title {
+  position: absolute;
+  bottom: 0;
+  background-color: #f6f6f6;
+  height: 75px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+header .header-img .header-img__title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+header .header-img .header-img__title i {
+  font-size: 22px;
 }
 
 footer {
