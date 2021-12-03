@@ -181,12 +181,29 @@ body {
   padding: 15px;
 }
 
+.menu {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.menu .menu-title {
+  padding: 25px 0 5px 0;
+}
+.menu .title-border-green {
+  height: 3px;
+  width: 50px;
+  background-color: #99e2d0;
+}
+
 .nav {
   height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 -3px 5px 3px grey;
+  position: relative;
 }
 .nav .nav__logo {
   font-size: 32px;
@@ -264,19 +281,6 @@ footer .container a {
   padding-bottom: 5px;
 }
 
-.menu {
-  background-color: #f6f6f6;
-  padding-bottom: 25px;
-}
-.menu .menu-title {
-  padding: 25px 0 5px 0;
-}
-.menu .title-border-green {
-  height: 3px;
-  width: 50px;
-  background-color: #99e2d0;
-}
-
 .menu-card {
   height: 80px;
   padding-left: 25px;
@@ -339,6 +343,42 @@ footer .container a {
   border-radius: 100%;
   font-size: 22px;
   color: #99e2d0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  border-radius: 30px;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  margin: 50px 0;
+  transition: all 300ms linear;
+  overflow: hidden;
+  position: relative;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.button:hover::after {
+  opacity: 1;
+}
+.button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #ff79da;
+  opacity: 0;
+  transition: all 300ms linear;
+  z-index: 0;
+  position: absolute;
+}
+.button a {
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  padding: 20px 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
