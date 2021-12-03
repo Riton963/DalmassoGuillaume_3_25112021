@@ -18,24 +18,24 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .home-header {
   background-color: #f6f6f6;
 }
-.home-header .home-header__geoloc {
+.home-header__geoloc {
   height: 60px;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home-header .home-header__geoloc i {
+.home-header__geoloc i {
   margin-right: 10px;
 }
-.home-header .home-header__content {
+.home-header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,11 +43,11 @@ body {
   text-align: center;
   padding: 70px 0;
 }
-.home-header .home-header__content h1 {
+.home-header__content h1 {
   font-size: 2rem;
   margin-bottom: 25px;
 }
-.home-header .home-header__content .home-header__button {
+.home-header__button {
   margin-top: 25px;
   height: 60px;
   width: 260px;
@@ -58,10 +58,10 @@ body {
   align-items: center;
   transition: transform 400ms ease-out;
 }
-.home-header .home-header__content .home-header__button:hover {
+.home-header__button:hover {
   transform: scale(1.2);
 }
-.home-header .home-header__content .home-header__button a {
+.home-header__button a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -75,11 +75,11 @@ body {
   flex-direction: column;
   padding-bottom: 50px;
 }
-.functioning .functioning__title {
+.functioning__title {
   width: 100%;
   margin: 35px 0 20px 0;
 }
-.functioning .functioning__quote {
+.functioning__quote {
   height: 80px;
   width: 100%;
   background-color: #f6f6f6;
@@ -91,16 +91,16 @@ body {
   position: relative;
   transition: 0.8s;
 }
-.functioning .functioning__quote:hover {
+.functioning__quote:hover {
   background-color: #f5edff;
 }
-.functioning .functioning__quote:hover .quote__nbr {
+.functioning__quote:hover .quote__nbr {
   background-color: #9356dc;
 }
-.functioning .functioning__quote:hover i {
+.functioning__quote:hover i {
   color: #9356dc;
 }
-.functioning .functioning__quote .quote__nbr {
+.functioning__quote .quote__nbr {
   height: 30px;
   width: 30px;
   background-color: #9356dc;
@@ -113,11 +113,11 @@ body {
   position: absolute;
   left: -12px;
 }
-.functioning .functioning__quote i {
+.functioning__quote i {
   color: grey;
   padding: 0 25px 0 35px;
 }
-.functioning .functioning__quote p {
+.functioning__quote p {
   font-weight: 500;
 }
 
@@ -125,18 +125,18 @@ body {
   background-color: #f6f6f6;
   padding: 50px 0;
 }
-.restaurant .restaurant__card {
+.restaurant__card {
   margin-top: 35px;
   height: 300px;
   border-radius: 25px;
   background-color: white;
   position: relative;
 }
-.restaurant .restaurant__card a {
+.restaurant__card a {
   text-decoration: none;
   color: black;
 }
-.restaurant .restaurant__card a .restaurant__new {
+.restaurant__card a .restaurant__new {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -148,17 +148,17 @@ body {
   width: 100px;
   border-radius: 3px;
 }
-.restaurant .restaurant__card a .restaurant__new p {
+.restaurant__card a .restaurant__new p {
   color: #6b9e92;
   font-weight: bold;
 }
-.restaurant .restaurant__card a img {
+.restaurant__card a img {
   object-fit: cover;
   height: 70%;
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-.restaurant .restaurant__card a .restaurant__card-content {
+.restaurant__card a .restaurant__card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +194,7 @@ header .header-img img {
   height: 400px;
   width: 100%;
 }
-header .header-img .header-img__title {
+header .header-img__title {
   position: absolute;
   bottom: 0;
   background-color: #f6f6f6;
@@ -206,11 +206,11 @@ header .header-img .header-img__title {
   justify-content: space-between;
   padding: 0 25px;
 }
-header .header-img .header-img__title h2 {
+header .header-img__title h2 {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
 }
-header .header-img .header-img__title i {
+header .header-img__title i {
   font-size: 22px;
 }
 
@@ -246,6 +246,82 @@ footer .container a {
   text-decoration: none;
   color: white;
   padding-bottom: 5px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding-bottom: 25px;
+}
+.menu .menu-title {
+  padding: 25px 0 5px 0;
+}
+.menu .title-border-green {
+  height: 3px;
+  width: 50px;
+  background-color: #99e2d0;
+}
+.menu .menu-card {
+  height: 80px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menu .menu-card:hover .menu-card__content .menu-card__price {
+  transform: translateX(-20px);
+}
+.menu .menu-card:hover .menu-card__animation .menu-card__icon {
+  transform: translateX(0);
+}
+.menu .menu-card:hover .menu-card__animation .menu-card__icon i {
+  transform: rotate(360deg);
+}
+.menu .menu-card .menu-card__content {
+  width: 100%;
+}
+.menu .menu-card .menu-card__content .menu-card__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu .menu-card .menu-card__content .menu-card__description {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu-card .menu-card__content .menu-card__price {
+  font-weight: bold;
+  transform: translateX(60px);
+  transition: transform 400ms ease-in-out;
+}
+.menu .menu-card .menu-card__animation {
+  display: flex;
+  align-items: center;
+}
+.menu .menu-card .menu-card__animation .menu-card__icon {
+  transition: transform 400ms ease-in-out;
+  transform: translateX(81px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 0 20px 20px 0;
+  background-color: #99e2d0;
+}
+.menu .menu-card .menu-card__animation .menu-card__icon i {
+  transition: transform 400ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  font-size: 22px;
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=style.css.map */

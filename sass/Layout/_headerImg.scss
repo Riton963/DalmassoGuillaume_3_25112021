@@ -6,7 +6,7 @@ header {
       height: 400px;
       width: 100%;
     }
-    .header-img__title {
+    &__title {
       position: absolute;
       bottom: 0;
       background-color: $light-grey;

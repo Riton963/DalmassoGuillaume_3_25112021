@@ -1,7 +1,7 @@
 .home-header {
   background-color: $light-grey;
 
-  .home-header__geoloc {
+  &__geoloc {
     height: 60px;
     background-color: #eaeaea;
     display: flex;
@@ -11,7 +11,7 @@
       margin-right: 10px;
     }
   }
-  .home-header__content {
+  &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,25 +22,26 @@
       font-size: 2rem;
       margin-bottom: 25px;
     }
-    .home-header__button {
-      margin-top: 25px;
-      height: 60px;
-      width: 260px;
-      background: linear-gradient(to top, $primary-color, $secondary-color);
-      border-radius: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 400ms ease-out;
-      &:hover {
-        transform: scale(1.2);
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-        padding: 17px 11px;
-      }
+  }
+
+  &__button {
+    margin-top: 25px;
+    height: 60px;
+    width: 260px;
+    background: linear-gradient(to top, $primary-color, $secondary-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 400ms ease-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      padding: 17px 11px;
     }
   }
 }
