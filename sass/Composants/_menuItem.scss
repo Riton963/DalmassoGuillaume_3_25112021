@@ -1,0 +1,75 @@
+.menu-card {
+  height: 80px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &:hover .menu-card__content {
+    .menu-card__price {
+      transform: translateX(-20px);
+    }
+  }
+
+  &:hover .menu-card__animation {
+    .menu-card__icon {
+      transform: translateX(0);
+      i {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .menu-card__content {
+    width: 100%;
+    .menu-card__title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .menu-card__description {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-card__price {
+      font-weight: bold;
+      transform: translateX(60px);
+      transition: transform 400ms ease-in-out;
+    }
+  }
+
+  .menu-card__animation {
+    display: flex;
+    align-items: center;
+
+    .menu-card__icon {
+      transition: transform 400ms ease-in-out;
+      transform: translateX(81px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+      border-radius: 0 20px 20px 0;
+      background-color: $tretiary-color-green;
+
+      i {
+        transition: transform 400ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        font-size: 22px;
+        color: $tretiary-color-green;
+      }
+    }
+  }
+}

@@ -1,11 +1,6 @@
 @import './Utils/variables';
 @import './Utils/mixins';
-@import './Base/typography';
 @import './Base/base';
-@import './Pages/homeHeader';
-@import './Pages/functioning';
-@import './Pages/restaurants';
-@import './Layout/nav';
-@import './Layout/headerImg';
-@import './Layout/footer';
-@import './Composants/menuCard';
+@import './Pages/index';
+@import './Layout/layout';
+@import './Composants/composants';

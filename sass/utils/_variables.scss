@@ -1,4 +1,9 @@
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tretiary-color: #99e2d0;
+$primary-color-purple: #9356dc;
+$secondary-color-pink: #ff79da;
+$tretiary-color-green: #99e2d0;
+$gradient-button: linear-gradient(
+  to top,
+  $primary-color-purple,
+  $secondary-color-pink
+);
 $light-grey: #f6f6f6;
