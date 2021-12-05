@@ -14,4 +14,8 @@
     width: 50px;
     background-color: $tretiary-color-green;
   }
+
+  .btn-big {
+    @include btn-size(0 55px);
+  }
 }

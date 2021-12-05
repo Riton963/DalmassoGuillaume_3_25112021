@@ -1,17 +1,18 @@
 .menu-card {
   height: 80px;
-  padding-left: 25px;
+  padding: 0 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
   margin: 20px 0 0 0;
   border-radius: 20px;
   overflow: hidden;
+  @include elem-shadow;
+  position: relative;
 
   &:hover .menu-card__content {
     .menu-card__price {
-      transform: translateX(-20px);
+      margin-right: 81px;
     }
   }
 
@@ -28,24 +29,31 @@
     width: 100%;
     .menu-card__title {
       font-weight: bold;
-      font-size: 1.2rem;
     }
 
     .menu-card__description {
       display: flex;
       justify-content: space-between;
+
+      .menu-card__text {
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
 
     .menu-card__price {
       font-weight: bold;
-      transform: translateX(60px);
-      transition: transform 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
     }
   }
 
   .menu-card__animation {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
 
     .menu-card__icon {
       transition: transform 400ms ease-in-out;
