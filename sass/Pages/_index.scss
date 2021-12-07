@@ -1,3 +1,84 @@
+.body-index {
+  animation: loading-anim 3200ms;
+}
+
+.loading-animation {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: $light-grey;
+  z-index: -1;
+  animation: loading-anim 3000ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 15px solid $primary-color-purple;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 75px;
+      top: -7px;
+      bottom: -7px;
+      left: -7px;
+      right: -7px;
+      border: 7px solid transparent;
+      border-top-color: $tretiary-color-green;
+      animation: spin 750ms linear infinite;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 75px;
+      top: -15px;
+      bottom: -15px;
+      left: -15px;
+      right: -15px;
+      border: 7px solid transparent;
+      border-top-color: $secondary-color-pink;
+      animation: spin 1000ms linear infinite;
+    }
+
+    span {
+      @include logo-font;
+    }
+  }
+}
+
+@keyframes loading-anim {
+  0% {
+    z-index: 3;
+    display: flex;
+    overflow-y: hidden;
+  }
+  90% {
+    display: flex;
+    overflow-y: hidden;
+  }
+  100% {
+    z-index: 3;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .home-header {
   background-color: $light-grey;
 
