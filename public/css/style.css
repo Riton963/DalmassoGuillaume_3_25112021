@@ -22,6 +22,16 @@ body {
   margin: 0 auto;
 }
 
+@keyframes menu-item-position {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu-card {
   height: 80px;
   padding: 0 15px;
@@ -33,6 +43,9 @@ body {
   overflow: hidden;
   box-shadow: 0px 4px 10px #c3c3c3;
   position: relative;
+  animation: menu-item-position 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .menu-card:hover .menu-card__content .menu-card__price {
   margin-right: 81px;
@@ -137,10 +150,9 @@ body {
   position: relative;
 }
 .nav .nav__logo {
-  font-size: 32px;
   color: black;
   font-family: "Shrikhand", cursive;
-  font-size: 2.3rem;
+  font-size: 1.7rem;
 }
 .nav a {
   position: absolute;
@@ -172,7 +184,7 @@ header .header-img__title {
 }
 header .header-img__title h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 header .header-img__title i {
   font-size: 22px;
@@ -212,8 +224,37 @@ footer .container a {
   padding-bottom: 5px;
 }
 
+@keyframes disable-scroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: hidden;
+  }
+}
+@keyframes loading-anim {
+  0% {
+    z-index: 3;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 3;
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .body-index {
-  animation: loading-anim 3200ms;
+  animation: disable-scroll 2000ms;
 }
 
 .loading-animation {
@@ -221,8 +262,9 @@ footer .container a {
   width: 100%;
   position: absolute;
   background-color: #f6f6f6;
-  z-index: -1;
-  animation: loading-anim 3000ms;
+  z-index: -3;
+  opacity: 0;
+  animation: loading-anim 2000ms;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,28 +307,6 @@ footer .container a {
   font-family: "Shrikhand", cursive;
 }
 
-@keyframes loading-anim {
-  0% {
-    z-index: 3;
-    display: flex;
-    overflow-y: hidden;
-  }
-  90% {
-    display: flex;
-    overflow-y: hidden;
-  }
-  100% {
-    z-index: 3;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .home-header {
   background-color: #f6f6f6;
 }
@@ -417,6 +437,33 @@ footer .container a {
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
+}
+.menu .menu-starter:nth-child(3) {
+  animation-delay: 0ms;
+}
+.menu .menu-starter :nth-child(4) {
+  animation-delay: 250ms;
+}
+.menu .menu-starter :nth-child(5) {
+  animation-delay: 500ms;
+}
+.menu .menu-main:nth-child(3) {
+  animation-delay: 0ms;
+}
+.menu .menu-main :nth-child(4) {
+  animation-delay: 250ms;
+}
+.menu .menu-main :nth-child(5) {
+  animation-delay: 500ms;
+}
+.menu .menu-dessert:nth-child(3) {
+  animation-delay: 0ms;
+}
+.menu .menu-dessert :nth-child(4) {
+  animation-delay: 250ms;
+}
+.menu .menu-dessert :nth-child(5) {
+  animation-delay: 500ms;
 }
 .menu .menu-title {
   padding: 25px 0 5px 0;

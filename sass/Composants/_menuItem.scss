@@ -1,3 +1,14 @@
+@keyframes menu-item-position {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .menu-card {
   height: 80px;
   padding: 0 15px;
@@ -9,6 +20,9 @@
   overflow: hidden;
   @include elem-shadow;
   position: relative;
+  animation: menu-item-position 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
   &:hover .menu-card__content {
     .menu-card__price {

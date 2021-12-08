@@ -6,10 +6,9 @@
   box-shadow: 0 -3px 5px 3px grey;
   position: relative;
   .nav__logo {
-    font-size: 32px;
     color: black;
     @include logo-font;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
   a {
     position: absolute;
