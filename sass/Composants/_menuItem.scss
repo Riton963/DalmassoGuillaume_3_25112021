@@ -1,11 +1,20 @@
 @keyframes menu-item-position {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(20px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes bell {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -20,9 +29,15 @@
   overflow: hidden;
   @include elem-shadow;
   position: relative;
-  animation: menu-item-position 1500ms;
-  animation-fill-mode: forwards;
+  animation: menu-item-position 1500ms forwards;
   opacity: 0;
+  transition: all 500ms;
+
+  &:active .menu-card__content {
+    i {
+      animation-play-state: running;
+    }
+  }
 
   &:hover .menu-card__content {
     .menu-card__price {
@@ -43,6 +58,15 @@
     width: 100%;
     .menu-card__title {
       font-weight: bold;
+    }
+
+    i {
+      position: absolute;
+      top: 20px;
+      right: 107px;
+      opacity: 0;
+      animation: bell 0.5ms forwards;
+      animation-play-state: paused;
     }
 
     .menu-card__description {

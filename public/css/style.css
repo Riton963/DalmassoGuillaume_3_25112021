@@ -23,13 +23,21 @@ body {
 }
 
 @keyframes menu-item-position {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(20px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes bell {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .menu-card {
@@ -43,9 +51,12 @@ body {
   overflow: hidden;
   box-shadow: 0px 4px 10px #c3c3c3;
   position: relative;
-  animation: menu-item-position 1500ms;
-  animation-fill-mode: forwards;
+  animation: menu-item-position 1500ms forwards;
   opacity: 0;
+  transition: all 500ms;
+}
+.menu-card:active .menu-card__content i {
+  animation-play-state: running;
 }
 .menu-card:hover .menu-card__content .menu-card__price {
   margin-right: 81px;
@@ -61,6 +72,14 @@ body {
 }
 .menu-card .menu-card__content .menu-card__title {
   font-weight: bold;
+}
+.menu-card .menu-card__content i {
+  position: absolute;
+  top: 20px;
+  right: 107px;
+  opacity: 0;
+  animation: bell 0.5ms forwards;
+  animation-play-state: paused;
 }
 .menu-card .menu-card__content .menu-card__description {
   display: flex;
