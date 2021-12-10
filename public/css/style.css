@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes disable-scroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: hidden;
+  }
+}
+@keyframes loading-anim {
+  0% {
+    z-index: 3;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 3;
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes menu-item-position {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h1,
 h2,
 h3,
@@ -22,24 +61,6 @@ body {
   margin: 0 auto;
 }
 
-@keyframes menu-item-position {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes bell {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .menu-card {
   height: 80px;
   padding: 0 15px;
@@ -55,10 +76,10 @@ body {
   opacity: 0;
   transition: all 500ms;
 }
-.menu-card:active .menu-card__content i {
-  animation-play-state: running;
-}
 .menu-card:hover .menu-card__content .menu-card__price {
+  margin-right: 81px;
+}
+.menu-card:hover .menu-card__content .menu-card__title {
   margin-right: 81px;
 }
 .menu-card:hover .menu-card__animation .menu-card__icon {
@@ -72,14 +93,9 @@ body {
 }
 .menu-card .menu-card__content .menu-card__title {
   font-weight: bold;
-}
-.menu-card .menu-card__content i {
-  position: absolute;
-  top: 20px;
-  right: 107px;
-  opacity: 0;
-  animation: bell 0.5ms forwards;
-  animation-play-state: paused;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-card .menu-card__content .menu-card__description {
   display: flex;
@@ -243,43 +259,14 @@ footer .container a {
   padding-bottom: 5px;
 }
 
-@keyframes disable-scroll {
-  from {
-    overflow-y: hidden;
-  }
-  to {
-    overflow-y: hidden;
-  }
-}
-@keyframes loading-anim {
-  0% {
-    z-index: 3;
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    z-index: 3;
-    opacity: 0;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .body-index {
   animation: disable-scroll 2000ms;
 }
 
 .loading-animation {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
   background-color: #f6f6f6;
   z-index: -3;
   opacity: 0;
@@ -342,7 +329,6 @@ footer .container a {
 .home-header__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 70px 0;
@@ -457,31 +443,13 @@ footer .container a {
   align-items: center;
   padding-bottom: 50px;
 }
-.menu .menu-starter:nth-child(3) {
+.menu .menu-group:nth-child(3) {
   animation-delay: 0ms;
 }
-.menu .menu-starter :nth-child(4) {
+.menu .menu-group :nth-child(4) {
   animation-delay: 250ms;
 }
-.menu .menu-starter :nth-child(5) {
-  animation-delay: 500ms;
-}
-.menu .menu-main:nth-child(3) {
-  animation-delay: 0ms;
-}
-.menu .menu-main :nth-child(4) {
-  animation-delay: 250ms;
-}
-.menu .menu-main :nth-child(5) {
-  animation-delay: 500ms;
-}
-.menu .menu-dessert:nth-child(3) {
-  animation-delay: 0ms;
-}
-.menu .menu-dessert :nth-child(4) {
-  animation-delay: 250ms;
-}
-.menu .menu-dessert :nth-child(5) {
+.menu .menu-group :nth-child(5) {
   animation-delay: 500ms;
 }
 .menu .menu-title {

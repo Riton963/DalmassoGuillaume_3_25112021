@@ -5,35 +5,7 @@
   align-items: center;
   padding-bottom: 50px;
 
-  .menu-starter {
-    &:nth-child(3) {
-      animation-delay: 0ms;
-    }
-
-    :nth-child(4) {
-      animation-delay: 250ms;
-    }
-
-    :nth-child(5) {
-      animation-delay: 500ms;
-    }
-  }
-
-  .menu-main {
-    &:nth-child(3) {
-      animation-delay: 0ms;
-    }
-
-    :nth-child(4) {
-      animation-delay: 250ms;
-    }
-
-    :nth-child(5) {
-      animation-delay: 500ms;
-    }
-  }
-
-  .menu-dessert {
+  .menu-group {
     &:nth-child(3) {
       animation-delay: 0ms;
     }
