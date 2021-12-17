@@ -340,17 +340,16 @@ footer .container a {
 }
 
 .functioning {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding-bottom: 50px;
 }
-.functioning__title {
+.functioning .container__quote {
   width: 100%;
+}
+.functioning__title {
   margin: 35px 0 20px 0;
 }
 .functioning__quote {
+  margin-left: 15px;
   height: 80px;
   width: 100%;
   background-color: #f6f6f6;
@@ -438,7 +437,6 @@ footer .container a {
 }
 .restaurant .restaurant__card a .restaurant__card-content .heart-border {
   font-size: 21px;
-  position: relative;
   width: 24px;
 }
 .restaurant .restaurant__card a .restaurant__card-content .heart-solid {
@@ -460,6 +458,24 @@ footer .container a {
   opacity: 1;
 }
 
+@media all and (min-width: 1280px) {
+  .container__quote {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container__quote .functioning__quote {
+    width: 30%;
+  }
+
+  .container__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container__card .restaurant__card {
+    width: 48%;
+  }
+}
 .menu {
   background-color: #f6f6f6;
   display: flex;
