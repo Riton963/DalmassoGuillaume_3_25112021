@@ -5,6 +5,10 @@
   align-items: center;
   padding-bottom: 50px;
 
+  .menu-content {
+    width: 100%;
+  }
+
   .menu-group {
     &:nth-child(3) {
       animation-delay: 0ms;
@@ -31,5 +35,15 @@
 
   .btn-big {
     @include btn-size(0 55px);
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .menu-content {
+    display: flex;
+  }
+
+  .menu-group {
+    width: 30%;
   }
 }

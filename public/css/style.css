@@ -344,12 +344,12 @@ footer .container a {
 }
 .functioning .container__quote {
   width: 100%;
+  padding-left: 10px;
 }
 .functioning__title {
   margin: 35px 0 20px 0;
 }
 .functioning__quote {
-  margin-left: 15px;
   height: 80px;
   width: 100%;
   background-color: #f6f6f6;
@@ -483,6 +483,9 @@ footer .container a {
   align-items: center;
   padding-bottom: 50px;
 }
+.menu .menu-content {
+  width: 100%;
+}
 .menu .menu-group:nth-child(3) {
   animation-delay: 0ms;
 }
@@ -502,6 +505,16 @@ footer .container a {
 }
 .menu .btn-big {
   padding: 0 55px;
+}
+
+@media all and (min-width: 1280px) {
+  .menu-content {
+    display: flex;
+  }
+
+  .menu-group {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

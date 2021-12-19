@@ -87,6 +87,7 @@
 
   .container__quote {
     width: 100%;
+    padding-left: 10px;
   }
 
   &__title {
@@ -94,7 +95,6 @@
   }
 
   &__quote {
-    margin-left: 15px;
     height: 80px;
     width: 100%;
     background-color: $light-grey;
