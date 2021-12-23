@@ -1,0 +1,34 @@
+@media all and (min-width: 1280px) {
+  .menu-content {
+    display: flex;
+    justify-content: space-between;
+    .menu-group {
+      width: 30%;
+    }
+  }
+
+  .container__quote {
+    display: flex;
+    justify-content: space-between;
+    .functioning__quote {
+      width: 30%;
+    }
+  }
+
+  .container__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .restaurant__card {
+      width: 48%;
+    }
+  }
+
+  .footer {
+    background-color: #444;
+    .container-footer {
+      flex-direction: initial;
+      justify-content: space-between;
+    }
+  }
+}

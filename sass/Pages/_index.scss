@@ -34,7 +34,7 @@
       right: -7px;
       border: 7px solid transparent;
       border-top-color: $tretiary-color-green;
-      animation: spin 750ms linear infinite;
+      animation: spin 750ms linear 3;
     }
 
     &::after {
@@ -47,7 +47,7 @@
       right: -15px;
       border: 7px solid transparent;
       border-top-color: $secondary-color-pink;
-      animation: spin 1000ms linear infinite;
+      animation: spin 1000ms linear 2;
     }
 
     span {
@@ -220,25 +220,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media all and (min-width: 1280px) {
-  .container__quote {
-    display: flex;
-    justify-content: space-between;
-    .functioning__quote {
-      width: 30%;
-    }
-  }
-
-  .container__card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .restaurant__card {
-      width: 48%;
     }
   }
 }
