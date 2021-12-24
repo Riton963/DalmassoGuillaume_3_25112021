@@ -1,4 +1,6 @@
 @media all and (min-width: 1280px) {
+  // Pages menu
+
   .menu-content {
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,8 @@
       width: 30%;
     }
   }
+
+  // Page index
 
   .container__quote {
     display: flex;
@@ -24,10 +28,15 @@
     }
   }
 
-  .footer {
-    background-color: #444;
+  // Footer
+
+  footer {
+    .container {
+      width: 70%;
+      margin: 0 auto 0 5%;
+    }
     .container-footer {
-      flex-direction: initial;
+      flex-direction: initial !important;
       justify-content: space-between;
     }
   }
