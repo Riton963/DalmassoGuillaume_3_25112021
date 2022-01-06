@@ -10,14 +10,10 @@
   z-index: -3;
   opacity: 0;
   animation: loading-anim 2000ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   .loading-spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 150px;
     height: 150px;
     border-radius: 75px;
@@ -62,9 +58,7 @@
   &__geoloc {
     height: 60px;
     background-color: #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     i {
       margin-right: 10px;
     }
@@ -121,9 +115,7 @@
       width: 30px;
       background-color: $primary-color-purple;
       border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       color: white;
       font-size: 1rem;
       position: absolute;
@@ -160,9 +152,7 @@
         right: 20px;
         top: 20px;
         background-color: $tretiary-color-green;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         height: 40px;
         width: 100px;
         border-radius: 3px;

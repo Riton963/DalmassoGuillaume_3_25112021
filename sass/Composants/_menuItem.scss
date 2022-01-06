@@ -67,9 +67,7 @@
     .menu-card__icon {
       transition: transform 400ms ease-in-out;
       transform: translateX(81px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       height: 80px;
       width: 80px;
       border-radius: 0 20px 20px 0;
@@ -77,9 +75,7 @@
 
       i {
         transition: transform 400ms ease-in-out;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         background-color: white;
         height: 35px;
         width: 35px;
